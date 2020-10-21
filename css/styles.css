@@ -189,6 +189,10 @@ ul {
 .e-address:focus {
   color: var(--accent-text-cl);
 }
+.menu .menu-nav:active {
+  color: var(--accent-text-cl);
+}
+
 .link-logo-f {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
