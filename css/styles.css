@@ -351,6 +351,7 @@ ul {
   justify-content: center;
   padding-bottom: 50px;
   padding-top: 174px;
+  margin: 0;
 }
 .btn-nav {
   font-family: inherit;
