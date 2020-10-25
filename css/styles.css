@@ -354,7 +354,6 @@ ul {
 }
 .btn-nav {
   font-family: inherit;
-  box-sizing: border-box;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.87;
@@ -367,8 +366,11 @@ ul {
   border-color: inherit;
   box-shadow: none;
   background: #f5f4fa;
-  border-radius: 4px;
   border: none;
+  padding: 6px 22px;
+}
+.btn-box li:not(:last-child) {
+  margin-right: 10px;
 }
 .projects-headline {
   font-weight: 700;
