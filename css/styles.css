@@ -89,6 +89,22 @@ h3,
 p {
   margin-top: 0;
 }
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
 .container {
   width: 1600px;
   padding-left: 15px;
@@ -96,23 +112,12 @@ p {
   margin-right: auto;
   margin-left: auto;
 }
-img {
-  display: inline-block;
-  max-width: 100%;
-  height: auto;
-}
 .header {
   background-color: var(--white);
   display: flex;
   align-items: center;
   height: 80px;
-}
-ul {
-  list-style: none;
-}
-.header-items {
-  display: flex;
-  align-items: center;
+  justify-content: center;
 }
 .link-logo-h {
   font-family: "Raleway", sans-serif;
@@ -122,7 +127,16 @@ ul {
   text-decoration: none;
   font-style: normal;
   color: var(--main-text-cl);
+  margin-left: 215px;
 }
+ul {
+  list-style: none;
+}
+.header-items {
+  display: flex;
+  align-items: center;
+}
+
 .menu {
   display: flex;
   margin-left: 70px;
@@ -139,6 +153,9 @@ ul {
   font-style: normal;
   color: inherit;
   display: block;
+
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .auth li:not(:last-child) {
   margin-right: 50px;
@@ -147,6 +164,7 @@ ul {
   display: flex;
   justify-content: flex-end;
   margin-left: auto;
+  margin-left: 215px;
 }
 .auth-item {
   margin-left: auto;
@@ -164,6 +182,7 @@ ul {
   background-color: var(--background);
   height: 600px;
   text-align: center;
+  margin-bottom: 99px;
 }
 .hero-title {
   color: var(--white);
@@ -178,9 +197,6 @@ ul {
   padding-top: 200px;
   padding-bottom: 30px;
 }
-.btn :not(:lastchild) {
-  padding: 8px;
-}
 .btn {
   font-family: inherit;
   font-weight: 500;
@@ -194,7 +210,10 @@ ul {
   border-radius: 4px;
   border-color: inherit;
   box-shadow: none;
+  border: none;
 }
+.btn-nav:hover,
+.btn-nav:focus,
 .btn:hover,
 .btn:focus {
   color: var(--white);
@@ -203,7 +222,8 @@ ul {
 }
 .menu-values {
   display: flex;
-  margin-left: 215px;
+  margin-bottom: 94px;
+  justify-content: center;
 }
 .menu-values li:not(:last-child) {
   padding-right: 30px;
@@ -214,25 +234,62 @@ ul {
 .section-title {
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.166;
   text-align: center;
+  line-height: 1.166;
   color: var(--main-text-cl);
+  padding-bottom: 50px;
 }
-.features {
+.our-work {
+  display: flex;
+  padding-right: not;
+  justify-content: center;
+  margin-bottom: 94px;
+}
+.our-work li:not(:last-child) {
+  padding-right: 30px;
+}
+.team-members {
+  padding-top: 94px;
+}
+.team {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-bottom: 94px;
+  justify-content: center;
+}
+.members {
+  width: 270px;
+  text-align: center;
+  /* flex-basis: calc(100% / 4 - 30px); */
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  margin-left: 30px;
+}
+
+.team img {
+  padding-bottom: 30px;
+}
+.names {
   font-style: normal;
   font-weight: 500;
   line-height: 1.14;
   text-transform: uppercase;
-}
-.team {
-  text-align: center;
+  padding-bottom: 10px;
 }
 .main-text {
   color: var(--grey);
+  padding-top: 4px;
+  padding-left: 24px;
+  padding-bottom: 20px;
 }
 .basement {
   background-color: var(--background);
   color: var(--white);
+  display: flex;
+  flex-direction: column;
 }
 .link-address {
   font-style: normal;
@@ -260,6 +317,7 @@ ul {
 }
 
 .link-logo-f {
+  display: inline-block;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -267,16 +325,50 @@ ul {
   text-decoration: none;
   font-style: normal;
   color: var(--white);
+
+  padding-left: 215px;
+  padding-top: 60px;
+  padding-bottom: 20px;
+}
+.menu-address {
+  padding-bottom: 60px;
+}
+.item-address {
+  padding-left: 215px;
+  text-align: left;
+}
+.item-address :not(:last-child) {
+  display: inline-block;
+  padding-bottom: 9px;
 }
 .web {
   color: var(--accent-text-cl);
-  margin-left: 215px;
 }
 /* Styles for portfolio page */
-
-.projects-link {
-  font-style: normal;
-  text-decoration: none;
+.btn-box {
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+  padding-top: 174px;
+}
+.btn-nav {
+  font-family: inherit;
+  box-sizing: border-box;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.87;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--main-text-cl);
+  background-color: var(--button);
+  border-radius: 4px;
+  border-color: inherit;
+  box-shadow: none;
+  background: #f5f4fa;
+  border-radius: 4px;
+  border: none;
 }
 .projects-headline {
   font-weight: 700;
@@ -284,7 +376,23 @@ ul {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--main-text-cl);
+  padding-top: 20px;
+  padding-left: 24px;
+  padding-right: 4px;
 }
-.btn-box {
+.menu-projects {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.projects {
+  background: #ffffff;
+}
+.projects {
+  padding-left: 30px;
+  padding-bottom: 30px;
+}
+.projects-link {
+  font-style: normal;
+  text-decoration: none;
 }
