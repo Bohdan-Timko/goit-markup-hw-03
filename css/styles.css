@@ -70,6 +70,9 @@
   --button: #f5f4fa;
   --body-background: #e5e5e5;
 }
+html {
+  box-sizing: border-box;
+}
 body {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
@@ -77,12 +80,39 @@ body {
   letter-spacing: 0.03em;
   color: var(--main-text-cl);
   background-color: var(--body-background);
+  margin: 0px;
+  padding: 0px;
+}
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+.container {
+  width: 1600px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+img {
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
 }
 .header {
   background-color: var(--white);
+  display: flex;
+  align-items: center;
+  height: 80px;
 }
 ul {
   list-style: none;
+}
+.header-items {
+  display: flex;
+  align-items: center;
 }
 .link-logo-h {
   font-family: "Raleway", sans-serif;
@@ -93,6 +123,14 @@ ul {
   font-style: normal;
   color: var(--main-text-cl);
 }
+.menu {
+  display: flex;
+  margin-left: 70px;
+}
+.menu li:not(:last-child) {
+  margin-right: 40px;
+}
+
 .menu-nav {
   font-weight: 500;
   line-height: 1.142px;
@@ -100,7 +138,18 @@ ul {
   text-decoration: none;
   font-style: normal;
   color: inherit;
-  background-color: var(--white);
+  display: block;
+}
+.auth li:not(:last-child) {
+  margin-right: 50px;
+}
+.auth {
+  display: flex;
+  justify-content: flex-end;
+  margin-left: auto;
+}
+.auth-item {
+  margin-left: auto;
 }
 .e-address {
   font-weight: 500;
@@ -111,12 +160,32 @@ ul {
   text-decoration: none;
   color: var(--grey);
 }
+.hero {
+  background-color: var(--background);
+  height: 600px;
+  text-align: center;
+}
+.hero-title {
+  color: var(--white);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  background-color: var(--background);
+  text-align: center;
+
+  padding-top: 200px;
+  padding-bottom: 30px;
+}
+.btn :not(:lastchild) {
+  padding: 8px;
+}
 .btn {
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.87;
-  display: flex;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
@@ -132,18 +201,15 @@ ul {
   background-color: var(--accent-text-cl);
   font-weight: 700;
 }
-.hero {
-  background-color: var(--background);
+.menu-values {
+  display: flex;
+  margin-left: 215px;
 }
-.hero-title {
-  color: var(--white);
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  background-color: var(--background);
+.menu-values li:not(:last-child) {
+  padding-right: 30px;
+}
+.menu-values .values {
+  width: 270px;
 }
 .section-title {
   font-weight: 700;
@@ -204,6 +270,7 @@ ul {
 }
 .web {
   color: var(--accent-text-cl);
+  margin-left: 215px;
 }
 /* Styles for portfolio page */
 
@@ -217,4 +284,7 @@ ul {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--main-text-cl);
+}
+.btn-box {
+  display: flex;
 }
