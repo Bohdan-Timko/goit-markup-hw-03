@@ -207,6 +207,8 @@ ul {
   border-color: inherit;
   box-shadow: none;
   border: none;
+  width: 200px;
+  height: 50px;
 }
 .btn-nav:hover,
 .btn-nav:focus,
@@ -322,6 +324,9 @@ ul {
 .link-address:hover,
 .link-footer:focus,
 .link-address:focus,
+nav .studio,
+nav .portfolio,
+nav .contacts,
 .menu-nav:hover,
 .menu-nav:focus,
 .e-address:hover,
@@ -408,13 +413,19 @@ ul {
   flex-wrap: wrap;
   justify-content: center;
   margin: 0;
+  padding: 0;
+  margin-bottom: 94px;
+}
+.menu-projects .projects {
+  display: block;
+  width: 370px;
+  height: 404px;
+  border: 1px solid #eeeeee;
+  margin-right: 30px;
+  margin-bottom: 30px;
 }
 .projects {
   background: #ffffff;
-}
-.projects {
-  padding-left: 30px;
-  padding-bottom: 30px;
 }
 .projects-link {
   font-style: normal;
