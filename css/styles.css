@@ -107,9 +107,7 @@ img {
 }
 
 .container {
-  width: 1170px;
-  /* padding-left: 15px;
-  padding-right: 15px; */
+  width: 1600px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -118,7 +116,7 @@ img {
   display: flex;
   align-items: center;
   height: 80px;
-  justify-content: center;
+  justify-content: left;
 }
 .link-logo-h {
   font-family: "Raleway", sans-serif;
@@ -128,6 +126,7 @@ img {
   text-decoration: none;
   font-style: normal;
   color: var(--main-text-cl);
+  margin-left: 215px;
 }
 ul {
   list-style: none;
@@ -138,11 +137,13 @@ ul {
 }
 
 .menu {
+  display: inline-block;
   display: flex;
-  margin-left: 70px;
+  margin-left: 93px;
+  padding: 0px;
 }
 .menu li:not(:last-child) {
-  margin-right: 40px;
+  padding-right: 50px;
 }
 
 .menu-nav {
@@ -153,21 +154,16 @@ ul {
   font-style: normal;
   color: inherit;
   display: block;
-
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
 .auth li:not(:last-child) {
-  padding-right: 50px;
+  margin-right: 50px;
 }
 .auth {
   display: flex;
-  margin-left: auto;
-  margin-right: 215px;
+  padding: 0;
+  margin-left: 331px;
 }
-.auth-item {
-  margin-left: auto;
-}
+
 .e-address {
   font-weight: 500;
   line-height: 1.142px;
@@ -192,6 +188,7 @@ ul {
   text-transform: uppercase;
   background-color: var(--background);
   text-align: center;
+  margin: 0;
 
   padding-top: 200px;
   padding-bottom: 30px;
@@ -223,16 +220,22 @@ ul {
   display: flex;
   margin-bottom: 94px;
   justify-content: center;
+  padding: 0;
 }
 .values {
   width: 270px;
-  background-color: yellow;
 }
 .values:not(:last-child) {
   margin-right: 30px;
 }
 .featues {
   padding-bottom: 10px;
+}
+.main-text {
+  margin: 0;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--grey);
 }
 .section-title {
   font-weight: 700;
@@ -241,12 +244,14 @@ ul {
   line-height: 1.166;
   color: var(--main-text-cl);
   padding-bottom: 50px;
+  margin: 0;
 }
 .our-work {
   display: flex;
-  padding-right: not;
+  padding: 0;
   justify-content: center;
   margin-bottom: 94px;
+  margin-top: 0;
 }
 .our-work li:not(:last-child) {
   padding-right: 30px;
@@ -260,12 +265,13 @@ ul {
 .team {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -30px;
-  margin-bottom: 94px;
   justify-content: center;
+  padding-bottom: 94px;
+  margin: 0;
 }
 .members {
   width: 270px;
+  height: 368px;
   text-align: center;
   /* flex-basis: calc(100% / 4 - 30px); */
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -274,21 +280,26 @@ ul {
   margin-left: 30px;
 }
 
-.team img {
-  padding-bottom: 30px;
-}
 .names {
   font-style: normal;
   font-weight: 500;
   line-height: 1.14;
   text-transform: uppercase;
   padding-bottom: 10px;
+  padding-top: 30px;
+  margin: 0;
+}
+.profession {
+  color: var(--grey);
+  margin: 0;
+  padding-bottom: 30;
 }
 .direction {
   color: var(--grey);
   padding-top: 4px;
   padding-left: 24px;
   padding-bottom: 20px;
+  margin: 0;
 }
 .basement {
   background-color: var(--background);
@@ -317,6 +328,9 @@ ul {
 .e-address:focus {
   color: var(--accent-text-cl);
 }
+.menu-nav a.current:visited {
+  color: var(--accent-text-cl);
+}
 
 .link-logo-f {
   display: inline-block;
@@ -328,16 +342,18 @@ ul {
   font-style: normal;
   color: var(--white);
 
-  padding-left: 215px;
-  padding-top: 60px;
-  padding-bottom: 20px;
+  margin-left: 215px;
+  margin-top: 60px;
+  margin-bottom: 20px;
 }
 .menu-address {
-  padding-bottom: 60px;
+  margin-bottom: 60px;
+  padding: 0;
 }
 .item-address {
-  padding-left: 215px;
+  margin-left: 215px;
   text-align: left;
+  padding-bottom: 9px;
 }
 .item-address :not(:last-child) {
   display: inline-block;
@@ -346,6 +362,7 @@ ul {
 .web {
   color: var(--accent-text-cl);
 }
+
 /* Styles for portfolio page */
 .btn-box {
   display: inline-block;
@@ -373,7 +390,7 @@ ul {
   padding: 6px 22px;
 }
 .btn-box li:not(:last-child) {
-  margin-right: 10px;
+  margin-right: 8px;
 }
 .projects-headline {
   font-weight: 700;
@@ -384,11 +401,13 @@ ul {
   padding-top: 20px;
   padding-left: 24px;
   padding-right: 4px;
+  margin: 0;
 }
 .menu-projects {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin: 0;
 }
 .projects {
   background: #ffffff;
