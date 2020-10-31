@@ -423,6 +423,9 @@ nav .contacts,
   font-style: normal;
   text-decoration: none;
 }
+.portfolio-section {
+  padding-bottom: 0;
+}
 .main-1200 {
   width: 1200px;
   margin-right: auto;
