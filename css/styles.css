@@ -418,6 +418,9 @@ nav .contacts,
   width: calc(100% / 3 - 30px);
   margin-bottom: 30px;
 }
+.menu-projects:nth-child(3n) {
+  margin-right: 0;
+}
 
 .projects-link {
   font-style: normal;
@@ -427,7 +430,7 @@ nav .contacts,
   padding-bottom: 0;
 }
 .main-1200 {
-  width: 1200px;
+  width: 1230px;
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
