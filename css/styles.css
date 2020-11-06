@@ -214,10 +214,12 @@ ul {
 }
 .menu-values {
   display: flex;
-  padding-top: 94px;
-  padding-bottom: 94px;
   justify-content: center;
   margin: 0;
+}
+.content-box {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .values {
   /* width: 270px; */
@@ -248,6 +250,8 @@ ul {
   justify-content: center;
   padding: 0;
   margin: 0;
+}
+.our-job {
   padding-bottom: 94px;
 }
 .our-work li:not(:last-child) {
@@ -367,9 +371,12 @@ nav .contacts,
   display: inline-block;
   display: flex;
   justify-content: center;
-  padding-bottom: 50px;
-  padding-top: 174px;
+  padding-bottom: 34px;
   margin: 0;
+}
+.portfolio-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .btn-nav {
   font-family: inherit;
@@ -409,7 +416,6 @@ nav .contacts,
   margin-bottom: 0;
   margin-right: -30px;
   margin-bottom: -30;
-  padding-bottom: 94px;
   justify-content: center;
 }
 .projects {
@@ -444,11 +450,8 @@ nav .contacts,
   font-style: normal;
   text-decoration: none;
 }
-.portfolio-section {
-  padding-bottom: 0;
-}
 .main-1200 {
-  width: 1230px;
+  width: 1200px;
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
